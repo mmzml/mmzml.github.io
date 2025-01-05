@@ -23,7 +23,7 @@ a.contact-btn {
 }
 
 a.contact-btn:link, a.contact-btn:visited {
-  color: rgb(54, 54, 54);
+  color: rgb(174, 174, 174);
 }
 
 a.contact-btn:hover, a.contact-btn:active {
@@ -34,8 +34,7 @@ ul.main-menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 15%;
-    min-width: 350px;
+    width: 20%;
     background-color: rgb(54, 54, 54);
     position: fixed;
     height: 100%;
@@ -49,8 +48,8 @@ ul.main-menu {
   .logo {
     border-radius: 50%;
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 60%;
+    height: 60%;
     margin: 0 auto 1em;
     box-shadow: 0px 0px 15px 0px;
     overflow: hidden;
@@ -89,7 +88,7 @@ ul.main-menu {
   }
 
   .content {
-    margin-left: max(15%, 350px);
+    margin-left: 20%;
     padding: 1px 16px;
     font-size: 18px;
   }
@@ -102,7 +101,7 @@ ul.main-menu {
 
   video {
     margin: auto;
-    width: 500px;
+    width: 100%;
   }
 
   img {
