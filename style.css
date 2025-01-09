@@ -6,7 +6,8 @@ body {
 }
 
 .contact {
-  padding: 4px 1px
+  padding: 8px 16px;
+  color: rgb(184, 184, 184);
 }
 
 a:link, a:visited {
@@ -15,19 +16,6 @@ a:link, a:visited {
 
 a:hover, a:active {
   color: #23b4b9;
-}
-
-a.contact-btn {
-  text-decoration: none;
-  padding: 16px 16px;
-}
-
-a.contact-btn:link, a.contact-btn:visited {
-  color: rgb(174, 174, 174);
-}
-
-a.contact-btn:hover, a.contact-btn:active {
-  color: white;
 }
 
 ul.main-menu {
