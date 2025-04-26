@@ -24,7 +24,7 @@ const HomePage = () => {
       <h1>Education</h1>
       <ul>
         <li>
-          University of Toronto (2021-2025): Honours Bachelor of Science
+          University of Toronto (2021-): Honours Bachelor of Science
           <br />
           CGPA: 3.97 (
           <a target="_blank" rel="noopener noreferrer" href="/transcript.pdf">
