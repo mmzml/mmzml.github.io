@@ -11,10 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           {" "}
-          {/* Layout wraps the pages */}
           <Route index element={<HomePage />} /> {/* Default page at '/' */}
           <Route path="research" element={<ResearchPage />} />
-          {/* Add other routes/pages here if needed */}
           <Route
             path="*"
             element={

@@ -34,7 +34,7 @@ const MainMenu = ({ isOpen, onLinkClick }) => {
           to="/"
           className={({ isActive }) => (isActive ? styles.active : "")}
           onClick={handleLinkClick}
-          end // Use 'end' for the home link to prevent matching '/research'
+          end
         >
           Home
         </NavLink>

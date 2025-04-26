@@ -45,7 +45,6 @@ const ResearchPage = () => {
         Poster Showcase:
         <div className="center-container">
           {" "}
-          {/* Use the global helper class */}
           <img
             src="/images/Hanabi Research Poster.png"
             alt="Hanabi research poster"
@@ -152,7 +151,6 @@ const ResearchPage = () => {
         A video of two games is shown below. <br />
         <div className="center-container">
           {" "}
-          {/* Use the global helper class */}
           <video controls>
             <source src="/videos/Breakout demo.mp4" type="video/mp4" />
             Your browser does not support HTML video.
