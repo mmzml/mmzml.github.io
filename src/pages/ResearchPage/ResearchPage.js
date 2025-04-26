@@ -86,7 +86,7 @@ const ResearchPage = () => {
           href="https://docs.google.com/presentation/d/18RFytZTgEIN3Tr_h_kx2dJ0lfDm6BD9UdPULiAetpXc/edit#slide=id.g1ac259d6c06_1_0"
         >
           short slide deck
-        </a>
+        </a>{" "}
         outlining the features of the app, and also how we adhered to{" "}
         <a
           target="_blank"

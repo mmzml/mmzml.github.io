@@ -121,7 +121,7 @@ const HomePage = () => {
           href="https://www.josephjaywilliams.com/home"
         >
           Intelligent Adaptive Interventions Lab
-        </a>
+        </a>{" "}
         as a part of the{" "}
         <a
           target="_blank"
