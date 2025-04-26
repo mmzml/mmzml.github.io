@@ -1,0 +1,83 @@
+/* src/index.css */
+body {
+    margin: 0;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #212121; /* Slightly adjusted dark grey */
+    color: #e0e0e0; /* Light grey for text */
+    line-height: 1.6;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: #4db6ac; /* A slightly softer teal */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover, a:focus {
+    color: #80cbc4; /* Lighter teal on hover */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    margin: 2em 0;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  
+  /* Add some basic responsive image/video handling */
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Prevents bottom space */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .center-container { /* Renamed from .center for clarity */
+      width: 100%;
+      max-width: 700px; /* Limit width for better readability on large screens */
+      margin: 20px auto; /* Center block elements */
+      padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    .center-container {
+       max-width: 90%;
+    }
+  }

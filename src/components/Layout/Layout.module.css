@@ -1,0 +1,41 @@
+/* src/components/Layout/Layout.module.css */
+.layout {
+    display: flex;
+  }
+  
+  .content {
+    margin-left: 250px; /* Space for the sidebar */
+    padding: 20px 40px;
+    width: calc(100% - 250px); /* Take remaining width */
+    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+    min-height: 100vh; /* Ensure content area fills height */
+  }
+  
+  .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999; /* Below menu, above content */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .content {
+      margin-left: 0; /* No margin when menu is collapsible */
+      width: 100%;
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .content.menuOpen {
+       /* Optional: slightly dim content when menu is open on mobile */
+       filter: brightness(0.7);
+    }
+  
+    .overlay.visible {
+        display: block;
+    }
+  }
