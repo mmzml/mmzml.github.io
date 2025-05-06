@@ -52,6 +52,49 @@ const ResearchPage = () => {
         </div>
       </p>
       <hr />
+      <h1>
+        <a
+          href="https://mmzml.github.io/PakPoll"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PakPoll
+        </a>
+      </h1>
+      <p>
+        <a
+          href="https://github.com/mmzml/PakPoll"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Repository
+        </a>
+      </p>
+      <p>
+        Inspired by Project538 and{" "}
+        <a
+          href="https://338canada.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          338Canada
+        </a>
+        , I developed a website where users can input polling numbers and
+        generate a simulated map based on those numbers. The website is
+        currently quite simple with limited functionality, but I plan on
+        developing it further, as time permits. Possible future paths could
+        include adding clickable constituencies to view more details and adding
+        a special poll-tracker to show what the current projections are (akin to
+        the main functionalities of websites like 338Canada).
+      </p>
+      <p>
+        Here is a screenshot of the website:
+        <div className="center-container">
+          {" "}
+          <img src="/images/PakPoll.png" alt="PakPoll Screenshot" />
+        </div>
+      </p>
+      <hr />
       <h1>Auto-Translate Chat App</h1>
       <p>
         <a
