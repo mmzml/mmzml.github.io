@@ -16,7 +16,7 @@ const HomePage = () => {
         modeling, probabilistic modeling, reinforcement learning). Feel free to
         check out the below information about me and also the{" "}
         <Link to="/research">Projects & Research</Link> tab for more details on
-        my work!
+        my work (including publications)!
       </p>
 
       <hr />
