@@ -4,6 +4,10 @@ import React from "react";
 const ResearchPage = () => {
   return (
     <div>
+      <h1>Publications</h1>
+      <ul>
+        <li>Taati, B., Muzammil, M., Zarghami, Y., Moturu, A., Kazerouni, A., Mihailidis, A., Reimer, H., & Hadjistavropoulos, T. (2025). SynPAIN: A Synthetic Dataset of Pain and Non-Pain Facial Expressions. <em>arXiv preprint arXiv:2507.19673.</em></li>
+      </ul>
       <h1>Hanabi</h1>
       <p>
         <a
