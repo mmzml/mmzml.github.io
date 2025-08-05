@@ -6,7 +6,8 @@ const ResearchPage = () => {
     <div>
       <h1>Publications</h1>
       <ul>
-        <li>Taati, B., Muzammil, M., Zarghami, Y., Moturu, A., Kazerouni, A., Mihailidis, A., Reimer, H., & Hadjistavropoulos, T. (2025). SynPAIN: A Synthetic Dataset of Pain and Non-Pain Facial Expressions. <em>arXiv preprint arXiv:2507.19673.</em></li>
+        <li>Taati, B., Muzammil, M., Zarghami, Y., Moturu, A., Kazerouni, A., Mihailidis, A., Reimer, H., & Hadjistavropoulos, T. (2025). SynPAIN: A Synthetic Dataset of Pain and Non-Pain Facial Expressions. <em>arXiv preprint arXiv:2507.19673.</em><br/>
+        [<a href="https://arxiv.org/abs/2507.19673" target="_blank" rel="noopener no referrer">Link</a>], [<a href="https://doi.org/10.5683/SP3/WCXMAP" target="_blank" rel="noopener no referrer">Dataset</a>]</li>
       </ul>
       <h1>Hanabi</h1>
       <p>
