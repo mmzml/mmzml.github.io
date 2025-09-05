@@ -6,9 +6,10 @@ const ResearchPage = () => {
     <div>
       <h1>Publications</h1>
       <ul>
-        <li>Taati, B., Muzammil, M., Zarghami, Y., Moturu, A., Kazerouni, A., Mihailidis, A., Reimer, H., & Hadjistavropoulos, T. (2025). SynPAIN: A Synthetic Dataset of Pain and Non-Pain Facial Expressions. <em>arXiv preprint arXiv:2507.19673.</em><br/>
-        [<a href="https://arxiv.org/abs/2507.19673" target="_blank" rel="noopener no referrer">Link</a>], [<a href="https://doi.org/10.5683/SP3/WCXMAP" target="_blank" rel="noopener no referrer">Dataset</a>]</li>
-        <li>Reimer, H., Zarghami, Y., Muzammil, M., Sabo, A., Moturu, A., Taati, B., & Hadjistavropoulos, T. (2025, October). Improving Pain Detection Algorithms with AI-Generated Images: Validation of AI-generated Images Depicting Pain Expressions [Poster presentation]. In AGE-WELL Annual Conference, [Montreal, Quebec, Canada].</li>
+        <li>Taati, B., <b>Muzammil, M.</b>, Zarghami, Y., Moturu, A., Kazerouni, A., Mihailidis, A., Reimer, H., & Hadjistavropoulos, T. (2025). SynPAIN: A Synthetic Dataset of Pain and Non-Pain Facial Expressions. <em>IEEE Journal of Biomedical and Health Informatics.</em> (UNDER REVIEW)<br/>
+        [<a href="https://arxiv.org/abs/2507.19673" target="_blank" rel="noopener no referrer">arXiv</a>], [<a href="https://doi.org/10.5683/SP3/WCXMAP" target="_blank" rel="noopener no referrer">Dataset</a>]</li>
+        <li>Zarghami, Y., <b>Muzammil, M.</b>, Adeli, V., Reimer, H., Hadjistavropoulos, T., & Taati, B. (2025). PainControl: Identity-Preserving Pain Expression Transfer with Generative Diffusion Models. <em>BioMedical Engineering OnLine.</em> (UNDER REVIEW)</li>
+        <li>Reimer, H., Zarghami, Y., <b>Muzammil, M.</b>, Sabo, A., Moturu, A., Taati, B., & Hadjistavropoulos, T. (2025, October). Improving Pain Detection Algorithms with AI-Generated Images: Validation of AI-generated Images Depicting Pain Expressions [Poster presentation]. In AGE-WELL Annual Conference, [Montreal, Quebec, Canada].</li>
       </ul>
       <h1>Hanabi</h1>
       <p>
