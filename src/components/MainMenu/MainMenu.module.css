@@ -92,8 +92,44 @@
     border-top: 1px solid #444;
   }
   
-  .contact a {
-    margin: 0 5px;
+  .contact p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0; /* separators will handle spacing */
+  }
+  
+  .contactLink {
+    color: #ffffff; /* white icons/links */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 6px;
+  }
+  
+  /* Icon size and alignment */
+  .icon {
+    color: inherit; /* inherit white from the link */
+    font-size: 1.25rem; /* increase icon size (adjust as needed) */
+    line-height: 1;
+    vertical-align: middle;
+  }
+  
+  /* Bullet separator between links (not after last one) */
+  .contactLink:not(:last-child)::after {
+    content: "•";
+    color: rgba(255, 255, 255, 0.85);
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 0.85rem;
+    vertical-align: middle;
+  }
+  
+  /* Optional: hover state */
+  .contactLink:hover .icon,
+  .contactLink:focus .icon {
+    opacity: 0.9;
   }
   
   /* Styles for Collapsible Menu */

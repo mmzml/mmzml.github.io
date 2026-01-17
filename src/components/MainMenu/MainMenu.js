@@ -58,10 +58,10 @@ const MainMenu = ({ isOpen, onLinkClick }) => {
             aria-label="E-mail"
             title="E-mail"
             onClick={handleLinkClick}
+            className={styles.contactLink}
           >
-            <FontAwesomeIcon icon={faEnvelope} />
+            <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
           </a>
-          {"\u00A0\u00A0"}
           <a
             href="https://github.com/mmzml"
             target="_blank"
@@ -69,10 +69,10 @@ const MainMenu = ({ isOpen, onLinkClick }) => {
             aria-label="GitHub"
             title="GitHub"
             onClick={handleLinkClick}
+            className={styles.contactLink}
           >
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faGithub} className={styles.icon} />
           </a>
-          {"\u00A0\u00A0"}
           <a
             href="https://www.linkedin.com/in/muhammad-muzammil-150440241/"
             target="_blank"
@@ -80,10 +80,10 @@ const MainMenu = ({ isOpen, onLinkClick }) => {
             aria-label="LinkedIn"
             title="LinkedIn"
             onClick={handleLinkClick}
+            className={styles.contactLink}
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
           </a>
-          {"\u00A0\u00A0"}
           <a
             href="/resume.pdf"
             target="_blank"
@@ -91,8 +91,9 @@ const MainMenu = ({ isOpen, onLinkClick }) => {
             aria-label="Resume (PDF)"
             title="Resume"
             onClick={handleLinkClick}
+            className={styles.contactLink}
           >
-            <FontAwesomeIcon icon={faFilePdf} />
+            <FontAwesomeIcon icon={faFilePdf} className={styles.icon} />
           </a>
         </p>
       </li>
