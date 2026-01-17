@@ -8,7 +8,10 @@
     background-color: #363636;
     position: fixed;
     height: 100%;
-    overflow: auto;
+    /* keep vertical scrolling but prevent horizontal overflow that causes scrollbar */
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box; /* include padding/border in width calculation */
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
     display: flex;
@@ -84,11 +87,13 @@
   
   .contact {
     margin-top: auto;
-    padding: 8px 8px;
+    /* reduce horizontal padding so content fits */
+    padding: 20px 12px;
     font-size: 0.85rem;
     color: #bdbdbd;
     text-align: center;
     line-height: 1.8;
+    border-top: 1px solid #444;
     width: 100%;
     display: flex;
     justify-content: center; /* center the p container horizontally */
@@ -101,7 +106,8 @@
     display: flex;
     align-items: center;
     justify-content: center; /* center icons horizontally */
-    gap: 0;
+    gap: 6px;
+    flex-wrap: wrap; /* wrap if space is tight so no horizontal scrollbar appears */
   }
   
   .contactLink {
@@ -109,13 +115,13 @@
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    padding: 0 6px;
+    padding: 0 4px; /* reduced horizontal padding */
   }
   
-  /* Icon size/color */
+  /* Icon size/color (slightly reduced to ensure fit) */
   .icon {
     color: inherit; /* inherit white from the link */
-    font-size: 1.35rem; /* increase if you want larger icons */
+    font-size: 1.25rem; /* adjusted to fit without scrollbar */
     line-height: 1;
     vertical-align: middle;
   }
@@ -124,8 +130,8 @@
   .contactLink:not(:last-child)::after {
     content: "•";
     color: rgba(255, 255, 255, 0.85);
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 4px; /* reduced margins */
+    margin-right: 4px;
     font-size: 0.85rem;
     vertical-align: middle;
   }
