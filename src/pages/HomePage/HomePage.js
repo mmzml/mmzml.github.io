@@ -78,7 +78,7 @@ const HomePage = () => {
         <a
           href="https://arxiv.org/abs/2507.19673"
           target="_blank"
-          rel="noopener no referrer"
+          rel="noopener noreferrer"
         >
           research paper
         </a>{" "}
