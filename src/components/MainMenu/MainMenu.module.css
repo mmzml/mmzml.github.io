@@ -88,7 +88,7 @@
   .contact {
     margin-top: auto;
     /* reduce horizontal padding so content fits */
-    padding: 20px 12px;
+    padding: 20px 0px;
     font-size: 0.85rem;
     color: #bdbdbd;
     text-align: center;
@@ -128,7 +128,7 @@
   
   /* Bullet separator between links (not after last one) */
   .contactLink:not(:last-child)::after {
-    content: "•";
+    content: "";
     color: rgba(255, 255, 255, 0.85);
     margin-left: 4px; /* reduced margins */
     margin-right: 4px;
