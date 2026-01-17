@@ -21,11 +21,14 @@ const HomePage = () => {
       <hr />
 
       <h1>Experiences</h1>
-      <h2>Sep 2025 - Present: Research Student at the{" "}
+
+      <h2>Research</h2>
+
+      <h3>Sep 2025 - Present: Research Student at the{" "}
         <a target="_blank" rel="noopener noreferrer" href="https://www.koziarskilab.com/">
           Koziarski Lab
         </a>
-      </h2>
+      </h3>
       <p>
         Since September 2025, I am working as a research student at the Koziarski Lab, a joint 
         lab at{" "}
@@ -47,24 +50,13 @@ const HomePage = () => {
         , under the supervision of Dr. Michał Koziarski. My research focuses on developing 
         deep learning models for detecting cellular senescence, with the end goal of 
         determining the efficacy of different senomorphic drugs. My responsibilities 
-        include data preprocessing, model development, and evaluation. I am excited to 
-        contribute to this important area of research and further develop my skills in 
-        computer vision and biomedical applications.
+        include data preprocessing, model development, and evaluation.
       </p>
-      <h2>
-        May 2025 - Present: Research Assistant for Professor Babak Taati
-      </h2>
+
+      <h3>May 2025 - Present: Research Assistant for Professor Babak Taati</h3>
       <p>
-        From May to August 2025, I worked with Professor Babak Taati as an undergraduate 
-        research assistant as a{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://artsci.calendar.utoronto.ca/course/csc494h1"
-        >
-          CSC495
-        </a>{" "}
-        student. My work involved investigating the impact of a synthetic dataset,{" "}
+        From May 2025 onward I worked with Professor Babak Taati as an undergraduate 
+        research assistant (CSC495). My work involved investigating the impact of a synthetic dataset,{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -82,55 +74,10 @@ const HomePage = () => {
         >
           research paper
         </a>{" "}
-        based on our findings. I also worked on two other projects with Prof. Taati's research group, both
-        of which resulted in publications. More details can be found in the{" "}
-        <Link to="/research">Projects & Research</Link> page. I am currently continuing 
-        my research with Prof. Taati as a Research Assistant on a volunteer basis.
+        based on our findings. I am currently continuing this research on a volunteer basis.
       </p>
-      <h2>
-        Sep 2025 - Dec 2025: Teaching Assistant for{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://artsci.calendar.utoronto.ca/course/csc207h1"
-        >
-          CSC207
-        </a>
-      </h2>
-      <p>
-        From September to December 2025, I was a TA for CSC207: Software
-        Design. My responsibilites included holding weekly office hours to 
-        assist students in their understanding of the material, while also 
-        serving as a midterm invigilator, marking midterms & final exams.
-        I also viewed and graded final project presentations.
-      </p>
-      <h2>
-        Jan 2025 - Apr 2025: Teaching Assistant for{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://artsci.calendar.utoronto.ca/course/csc148h1"
-        >
-          CSC148
-        </a>
-      </h2>
-      <p>
-        From January to April 2025, I was a TA for CSC148: Introduction to
-        Computer Science. My responsibilites included leading two weekly
-        two-hour lab sessions, while also holding office hours, serving as an
-        exam invigilator, and marking midterms & final exams.
-      </p>
-      <h2>
-        May 2024 - Dec 2024: Hanabi project (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://artsci.calendar.utoronto.ca/course/csc494h1"
-        >
-          CSC494/495
-        </a>
-        )
-      </h2>
+
+      <h3>May 2024 - Dec 2024: Hanabi project (CSC494/495)</h3>
       <p>
         From May to December 2024, I worked with a team of three under the
         supervision of Professors Alice Gao and Jonathan Calver on a project
@@ -151,22 +98,11 @@ const HomePage = () => {
         >
           here
         </a>
-        . Moreover, we also started work on an intelligent game-playing agent.
-        More details can be found in the{" "}
+        . More details can be found in the{" "}
         <Link to="/research">Projects & Research</Link> page.
       </p>
-      <h2>Sep 2023 - Apr 2024: FnS Consulting Inc.</h2>
-      <p>
-        From September 2023 to April 2024, I worked at FnS Consulting Inc., a
-        Vancouver-based software consulting firm, as a Software Developer
-        Intern. In this role, I worked on their IRM project, which involved
-        designing and developing an end-to-end web application that served as an
-        integrated risk management system for cybersecurity risks. For the
-        front-end, I coded in React, HTML/CSS, JavaScript, and TypeScript, while
-        I used C# for the back-end. This experience was my introduction to the
-        development of large-scale applications with industry purposes.
-      </p>
-      <h2>May 2023 - Aug 2023: IAI Lab (ROP)</h2>
+
+      <h3>May 2023 - Aug 2023: IAI Lab (ROP)</h3>
       <p>
         From May to August 2023, I worked at the{" "}
         <a
@@ -176,28 +112,69 @@ const HomePage = () => {
         >
           Intelligent Adaptive Interventions Lab
         </a>{" "}
-        as a part of the{" "}
+        as part of the Research Opportunities Program. At the lab, I assisted several graduate
+        students with their research in human-computer interaction and
+        education. My tasks ranged from programming (e.g. React, Python),
+        literature reviews, and administrative work.
+      </p>
+
+      <h2>Teaching</h2>
+
+      <h3>Jan 2026 - Present: Teaching Assistant for{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.artsci.utoronto.ca/current/experiential-learning/research-opportunities/research-opportunities-program"
+          href="https://artsci.calendar.utoronto.ca/course/csc148h1"
         >
-          Research Opportunities Program
-        </a>{" "}
-        at the University of Toronto. At the lab, I assisted several graduate
-        students with their research in human-computer interaction and
-        education. My tasks ranged from programming (e.g. React, Python),
-        literature reviews, and administrative work (e.g. note-taking during
-        meetings, document organization).
-      </p>
-      <h2>Sep 2022 - Apr 2023: UofT MSA</h2>
+          CSC148
+        </a>
+      </h3>
       <p>
-        From September 2022 to April 2023, I led the Department of Religious
-        Education at the University of Toronto Muslim Students' Association. In
-        this role, I organized educational programs, facilitated discussions on
-        faith and personal growth, and worked to create an inclusive environment
-        for a diverse student body. This experience deepened my skills in
-        leadership, event planning, and community building.
+        From January 2026 to present I TAed CSC148 again. My responsibilities include 
+        holding weekly office hours, providing assignment and coursework guidance, and 
+        grading & invigilating exams.
+      </p>
+
+      <h3>Sep 2025 - Dec 2025: Teaching Assistant for{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://artsci.calendar.utoronto.ca/course/csc207h1"
+        >
+          CSC207
+        </a>
+      </h3>
+      <p>
+        From September to December 2025, I was a TA for CSC207: Software
+        Design. My responsibilities included holding weekly office hours to 
+        assist students, serving as a midterm invigilator, and marking 
+        midterms & final exams.
+      </p>
+
+      <h3>Jan 2025 - Apr 2025: Teaching Assistant for{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://artsci.calendar.utoronto.ca/course/csc148h1"
+        >
+          CSC148
+        </a>
+      </h3>
+      <p>
+        From January to April 2025, I was a TA for CSC148: Introduction to
+        Computer Science. My responsibilities included leading two weekly
+        two-hour lab sessions, holding office hours, serving as an exam invigilator, and grading.
+      </p>
+
+      <h2>Industry</h2>
+
+      <h3>Sep 2023 - Apr 2024: FnS Consulting Inc.</h3>
+      <p>
+        From September 2023 to April 2024, I worked at FnS Consulting Inc., a
+        Vancouver-based software consulting firm, as a Software Developer
+        Intern. I worked on their IRM project, designing and developing an end-to-end web application. For the
+        front-end I used React, HTML/CSS, JavaScript, and TypeScript, while
+        the back-end used C#. This experience introduced me to development of large-scale applications.
       </p>
 
       <hr />
@@ -259,7 +236,7 @@ const HomePage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Later Life Learning Scholaship
+            Later Life Learning Scholarship
           </a>
         </li>
         <li>
