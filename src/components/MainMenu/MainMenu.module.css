@@ -84,12 +84,11 @@
   
   .contact {
     margin-top: auto;
-    padding: 20px 16px;
+    padding: 8px 8px;
     font-size: 0.85rem;
     color: #bdbdbd;
     text-align: center;
     line-height: 1.8;
-    border-top: 1px solid #444;
     width: 100%;
     display: flex;
     justify-content: center; /* center the p container horizontally */
@@ -116,7 +115,7 @@
   /* Icon size/color */
   .icon {
     color: inherit; /* inherit white from the link */
-    font-size: 1.00rem; /* increase if you want larger icons */
+    font-size: 1.35rem; /* increase if you want larger icons */
     line-height: 1;
     vertical-align: middle;
   }
