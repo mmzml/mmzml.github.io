@@ -1,6 +1,9 @@
 // src/components/MainMenu/MainMenu.js
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import styles from "./MainMenu.module.css"; // Import CSS Module
 
 const MainMenu = ({ isOpen, onLinkClick }) => {
@@ -50,25 +53,46 @@ const MainMenu = ({ isOpen, onLinkClick }) => {
       </li>
       <li className={styles.contact}>
         <p>
-          <a href="mailto:m.muzammil@mail.utoronto.ca">E-mail</a> |
+          <a
+            href="mailto:m.muzammil@mail.utoronto.ca"
+            aria-label="E-mail"
+            title="E-mail"
+            onClick={handleLinkClick}
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
+          {"\u00A0\u00A0"}
           <a
             href="https://github.com/mmzml"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
+            title="GitHub"
+            onClick={handleLinkClick}
           >
-            GitHub
-          </a>{" "}
-          |
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          {"\u00A0\u00A0"}
           <a
             href="https://www.linkedin.com/in/muhammad-muzammil-150440241/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+            onClick={handleLinkClick}
           >
-            LinkedIn
-          </a>{" "}
-          |
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-            Resume
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          {"\u00A0\u00A0"}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Resume (PDF)"
+            title="Resume"
+            onClick={handleLinkClick}
+          >
+            <FontAwesomeIcon icon={faFilePdf} />
           </a>
         </p>
       </li>
