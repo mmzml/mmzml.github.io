@@ -116,7 +116,7 @@
   /* Icon size/color */
   .icon {
     color: inherit; /* inherit white from the link */
-    font-size: 1.35rem; /* increase if you want larger icons */
+    font-size: 1.00rem; /* increase if you want larger icons */
     line-height: 1;
     vertical-align: middle;
   }
