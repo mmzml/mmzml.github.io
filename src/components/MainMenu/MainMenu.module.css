@@ -90,14 +90,19 @@
     text-align: center;
     line-height: 1.8;
     border-top: 1px solid #444;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* center the p container horizontally */
   }
   
+  /* Ensure the inline icons are centered inside the <p> */
   .contact p {
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 0; /* separators will handle spacing */
+    justify-content: center; /* center icons horizontally */
+    gap: 0;
   }
   
   .contactLink {
@@ -108,10 +113,10 @@
     padding: 0 6px;
   }
   
-  /* Icon size and alignment */
+  /* Icon size/color */
   .icon {
     color: inherit; /* inherit white from the link */
-    font-size: 1.25rem; /* increase icon size (adjust as needed) */
+    font-size: 1.35rem; /* increase if you want larger icons */
     line-height: 1;
     vertical-align: middle;
   }
