@@ -24,35 +24,6 @@ const HomePage = () => {
 
       <h2>Research</h2>
 
-      <h3>Sep 2025 - Present: Research Student at the{" "}
-        <a target="_blank" rel="noopener noreferrer" href="https://www.koziarskilab.com/">
-          Koziarski Lab
-        </a>
-      </h3>
-      <p>
-        Since September 2025, I am working as a research student at the Koziarski Lab, a joint 
-        lab at{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.sickkids.ca/"
-        >
-          the Hospital for Sick Children
-        </a>{" "}
-        and{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://vectorinstitute.ai/"
-        >
-          Vector Institute
-        </a>
-        , under the supervision of Dr. Michał Koziarski. My research focuses on developing 
-        deep learning models for detecting cellular senescence, with the end goal of 
-        determining the efficacy of different senomorphic drugs. My responsibilities 
-        include data preprocessing, model development, and evaluation.
-      </p>
-
       <h3>May 2025 - Present: Research Assistant for Professor Babak Taati</h3>
       <p>
         From May 2025 onward I worked with Professor Babak Taati as an undergraduate 
@@ -75,6 +46,35 @@ const HomePage = () => {
           research paper
         </a>{" "}
         based on our findings. I am currently continuing this research on a volunteer basis.
+      </p>
+
+      <h3>Sep 2025 - Feb 2026: Research Student at the{" "}
+        <a target="_blank" rel="noopener noreferrer" href="https://www.koziarskilab.com/">
+          Koziarski Lab
+        </a>
+      </h3>
+      <p>
+        From September 2025 to February 2026, I worked as a research student at the Koziarski Lab, a joint
+        lab at{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.sickkids.ca/"
+        >
+          the Hospital for Sick Children
+        </a>{" "}
+        and{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://vectorinstitute.ai/"
+        >
+          Vector Institute
+        </a>
+        , under the supervision of Dr. Michał Koziarski. My research focused on developing 
+        deep learning models for detecting cellular senescence, with the end goal of
+        determining the efficacy of different senomorphic drugs. My responsibilities
+        included data preprocessing, model development, and evaluation.
       </p>
 
       <h3>May 2024 - Dec 2024: Hanabi project (CSC494/495)</h3>
@@ -130,7 +130,7 @@ const HomePage = () => {
         </a>
       </h3>
       <p>
-        From January 2026 to present I TAed CSC148 again. My responsibilities include 
+        Since January 2026, I am once again working as a TA for CSC148. My responsibilities include 
         holding weekly office hours, providing assignment and coursework guidance, and 
         grading & invigilating exams.
       </p>
