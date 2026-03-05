@@ -7,10 +7,9 @@ import {
   faFileLines,
   faHouse,
   faFlask,
-  faSun,
-  faMoon,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
 import styles from "./MainMenu.module.css";
 
 const MainMenu = ({ isOpen, onLinkClick, isDark, onThemeToggle }) => {
@@ -42,14 +41,7 @@ const MainMenu = ({ isOpen, onLinkClick, isDark, onThemeToggle }) => {
 
       <li className={styles.navLabel}>
         <span>Navigation</span>
-        <button
-          className={styles.themeToggle}
-          onClick={onThemeToggle}
-          aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-        >
-          <FontAwesomeIcon icon={isDark ? faSun : faMoon} />
-          <span>{isDark ? "Light" : "Dark"}</span>
-        </button>
+        <ThemeSwitch isDark={isDark} onToggle={onThemeToggle} />
       </li>
 
       <li className={styles.menuItem}>

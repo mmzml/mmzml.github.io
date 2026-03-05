@@ -77,31 +77,6 @@
   justify-content: space-between;
 }
 
-/* Theme toggle button */
-.themeToggle {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  background: none;
-  border: 1px solid var(--sidebar-label);
-  color: var(--sidebar-label);
-  cursor: pointer;
-  padding: 3px 8px;
-  font-size: 0.65rem;
-  font-family: inherit;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  line-height: 1;
-  border-radius: 10px;
-  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
-}
-
-.themeToggle:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-  background-color: rgba(77, 182, 172, 0.1);
-}
-
 /* Nav links */
 .menuItem a {
   display: flex;
@@ -182,22 +157,6 @@
   color: inherit;
 }
 
-/* Hamburger toggle (mobile) */
-.menuToggle {
-  display: none;
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 1100;
-  background: var(--sidebar-bg);
-  color: white;
-  border: none;
-  padding: 10px 12px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
 @media (max-width: 992px) {
   .mainMenu {
     transform: translateX(-100%);
@@ -205,9 +164,5 @@
 
   .mainMenu.open {
     transform: translateX(0);
-  }
-
-  .menuToggle {
-    display: block;
   }
 }

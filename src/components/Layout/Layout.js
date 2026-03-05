@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import MainMenu from "../MainMenu/MainMenu";
+import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Layout.module.css";
@@ -26,25 +27,19 @@ const Layout = () => {
 
   const toggleTheme = () => setIsDark((d) => !d);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const toggleMenu = () => setIsMenuOpen((o) => !o);
+  const closeMenu = () => setIsMenuOpen(false);
 
   useEffect(() => {
     closeMenu();
   }, [location]);
 
-  // Close menu if clicking outside the menu on mobile
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (isMenuOpen && window.innerWidth <= 992) {
         if (
           !event.target.closest(`.${menuStyles.mainMenu}`) &&
-          !event.target.closest(`.${menuStyles.menuToggle}`)
+          !event.target.closest(`.${styles.mobileHeader}`)
         ) {
           closeMenu();
         }
@@ -52,22 +47,24 @@ const Layout = () => {
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isMenuOpen]);
 
   return (
     <div className={styles.layout}>
-      {/* Hamburger Button */}
-      <button
-        className={menuStyles.menuToggle}
-        onClick={toggleMenu}
-        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        aria-expanded={isMenuOpen}
-      >
-        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
-      </button>
+      {/* Mobile-only top bar */}
+      <header className={styles.mobileHeader}>
+        <button
+          className={styles.mobileToggle}
+          onClick={toggleMenu}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
+        >
+          <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
+        </button>
+        <span className={styles.mobileTitle}>Muhammad Muzammil</span>
+        <ThemeSwitch isDark={isDark} onToggle={toggleTheme} />
+      </header>
 
       <MainMenu
         isOpen={isMenuOpen}
@@ -76,15 +73,13 @@ const Layout = () => {
         onThemeToggle={toggleTheme}
       />
 
-      {/* Optional Overlay for mobile */}
       <div
         className={`${styles.overlay} ${
           isMenuOpen && window.innerWidth <= 992 ? styles.visible : ""
         }`}
         onClick={closeMenu}
-      ></div>
+      />
 
-      {/* Page Content */}
       <main
         className={`${styles.content} ${
           isMenuOpen && window.innerWidth <= 992 ? styles.menuOpen : ""
