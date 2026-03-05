@@ -96,7 +96,7 @@
 .navLabel {
   font-size: 0.65rem;
   font-weight: 700;
-  color: var(--sidebar-label);
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   padding: 10px 20px 4px;
