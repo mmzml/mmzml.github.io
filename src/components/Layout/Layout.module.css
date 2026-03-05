@@ -41,7 +41,11 @@
     border-bottom: 1px solid var(--sidebar-border);
     padding: 0 16px;
     z-index: 1100;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.3s ease-in-out;
+  }
+
+  .mobileHeaderHidden {
+    transform: translateY(-100%);
   }
 
   .mobileToggle {
@@ -76,6 +80,5 @@
 
   .overlay.visible {
     display: block;
-    top: 54px;
   }
 }

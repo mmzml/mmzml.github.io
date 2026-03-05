@@ -53,7 +53,7 @@ const Layout = () => {
   return (
     <div className={styles.layout}>
       {/* Mobile-only top bar */}
-      <header className={styles.mobileHeader}>
+      <header className={`${styles.mobileHeader} ${isMenuOpen ? styles.mobileHeaderHidden : ""}`}>
         <button
           className={styles.mobileToggle}
           onClick={toggleMenu}
