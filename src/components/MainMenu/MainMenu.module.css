@@ -17,6 +17,35 @@
   border-right: 1px solid var(--sidebar-border);
 }
 
+/* Mobile-only close button row */
+.closeItem {
+  display: none;
+  list-style: none;
+}
+
+@media (max-width: 992px) {
+  .closeItem {
+    display: flex;
+    align-items: center;
+    height: 54px;
+    padding: 0 8px;
+    flex-shrink: 0;
+  }
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
 .logoItem {
   padding: 20px 16px;
   text-align: center;

@@ -7,6 +7,7 @@ import {
   faFileLines,
   faHouse,
   faFlask,
+  faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
@@ -21,6 +22,12 @@ const MainMenu = ({ isOpen, onLinkClick, isDark, onThemeToggle }) => {
 
   return (
     <ul className={`${styles.mainMenu} ${isOpen ? styles.open : ""}`}>
+      <li className={styles.closeItem}>
+        <button className={styles.closeBtn} onClick={onLinkClick} aria-label="Close menu">
+          <FontAwesomeIcon icon={faTimes} />
+        </button>
+      </li>
+
       <li className={styles.logoItem}>
         <div className={styles.logo}>
           <Link to="/" onClick={handleLinkClick}>
