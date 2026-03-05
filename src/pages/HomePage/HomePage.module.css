@@ -1,0 +1,159 @@
+/* src/pages/HomePage/HomePage.module.css */
+
+/* Introduction */
+.introBlock {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 1rem 1.25rem 0.85rem;
+}
+
+.introBlock p {
+  margin: 0 0 0.9rem 0;
+}
+
+.interestGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.interestGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.interestLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-width: 5.5rem;
+}
+
+.interestTag {
+  font-size: 0.78rem;
+  color: var(--accent-text);
+  background: var(--accent-bg);
+  border-radius: 12px;
+  padding: 2px 10px;
+  white-space: nowrap;
+}
+
+.subsectionTitle {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.35rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.entry {
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.entryTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  margin: 0 0 0.45rem 0;
+  line-height: 1.4;
+}
+
+.entryBody {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+/* Education cards */
+.eduCard {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.85rem;
+  background: var(--bg-card);
+}
+
+.eduCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.eduInstitution {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-heading);
+}
+
+.eduYears {
+  font-size: 0.88rem;
+  color: var(--text-faint);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.eduDegree {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0.2rem 0 0.4rem 0;
+}
+
+.eduMeta {
+  font-size: 0.93rem;
+  color: var(--text-muted);
+  margin: 0 0 0.45rem 0;
+}
+
+.eduDetails {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.93rem;
+  color: var(--text-sub);
+  line-height: 1.7;
+}
+
+/* Awards list */
+.awardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.awardItem {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.awardYear {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-text);
+  background: var(--accent-bg);
+  border-radius: 3px;
+  padding: 2px 7px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.awardName {
+  font-size: 0.93rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}

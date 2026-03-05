@@ -1,0 +1,116 @@
+/* src/pages/ResearchPage/ResearchPage.module.css */
+.pubCard {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.85rem;
+  background: var(--bg-card);
+}
+
+.pubTitle {
+  font-weight: 700;
+  font-size: 0.97rem;
+  color: var(--text-heading);
+  margin: 0 0 0.3rem 0;
+  line-height: 1.4;
+}
+
+.pubAuthors {
+  font-size: 0.84rem;
+  color: var(--text-sub);
+  margin: 0 0 0.2rem 0;
+  line-height: 1.5;
+}
+
+.pubVenue {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 0 0 0.6rem 0;
+}
+
+.pubFooter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pubStatus {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--badge-amber-text);
+  background: var(--badge-amber-bg);
+  border-radius: 3px;
+  padding: 2px 7px;
+  white-space: nowrap;
+}
+
+.pubType {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--badge-indigo-text);
+  background: var(--badge-indigo-bg);
+  border-radius: 3px;
+  padding: 2px 7px;
+  white-space: nowrap;
+}
+
+.pubLink {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-hover);
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  padding: 1px 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pubLink:hover {
+  background-color: var(--accent);
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.projectLinks a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-hover);
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 3px 10px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.projectLinks a:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.centerContainer {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0;
+}
+
+.centerContainer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.centerContainer video {
+  max-width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}

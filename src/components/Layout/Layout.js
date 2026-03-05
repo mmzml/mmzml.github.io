@@ -9,7 +9,22 @@ import menuStyles from "../MainMenu/MainMenu.module.css";
 
 const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    const saved = localStorage.getItem("theme");
+    if (saved) return saved === "dark";
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
   const location = useLocation();
+
+  useEffect(() => {
+    document.documentElement.setAttribute(
+      "data-theme",
+      isDark ? "dark" : "light"
+    );
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  }, [isDark]);
+
+  const toggleTheme = () => setIsDark((d) => !d);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -26,9 +41,7 @@ const Layout = () => {
   // Close menu if clicking outside the menu on mobile
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Check if the click is outside the menu and the toggle button
       if (isMenuOpen && window.innerWidth <= 992) {
-        // A simple check: if the click is not inside an element with mainMenu class
         if (
           !event.target.closest(`.${menuStyles.mainMenu}`) &&
           !event.target.closest(`.${menuStyles.menuToggle}`)
@@ -56,14 +69,19 @@ const Layout = () => {
         <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
       </button>
 
-      <MainMenu isOpen={isMenuOpen} onLinkClick={closeMenu} />
+      <MainMenu
+        isOpen={isMenuOpen}
+        onLinkClick={closeMenu}
+        isDark={isDark}
+        onThemeToggle={toggleTheme}
+      />
 
       {/* Optional Overlay for mobile */}
       <div
         className={`${styles.overlay} ${
           isMenuOpen && window.innerWidth <= 992 ? styles.visible : ""
         }`}
-        onClick={closeMenu} // Close menu when overlay is clicked
+        onClick={closeMenu}
       ></div>
 
       {/* Page Content */}
@@ -72,7 +90,7 @@ const Layout = () => {
           isMenuOpen && window.innerWidth <= 992 ? styles.menuOpen : ""
         }`}
       >
-        <Outlet /> {/* Renders the matched child route component */}
+        <Outlet />
       </main>
     </div>
   );

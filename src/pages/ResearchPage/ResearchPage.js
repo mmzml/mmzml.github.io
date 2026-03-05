@@ -1,192 +1,249 @@
 // src/pages/ResearchPage/ResearchPage.js
-import React from "react";
+import CollapsibleSection from "../../components/CollapsibleSection/CollapsibleSection";
+import styles from "./ResearchPage.module.css";
 
 const ResearchPage = () => {
   return (
     <div>
-      <h1>Publications</h1>
-      <ul>
-        <li>Taati, B., <b>Muzammil, M.</b>, Zarghami, Y., Moturu, A., Kazerouni, A., Mihailidis, A., Reimer, H., & Hadjistavropoulos, T. (2025). SynPAIN: A Synthetic Dataset of Pain and Non-Pain Facial Expressions. <em>IEEE Journal of Biomedical and Health Informatics.</em> (UNDER REVIEW)<br/>
-        [<a href="https://arxiv.org/abs/2507.19673" target="_blank" rel="noopener noreferrer">arXiv</a>], [<a href="https://doi.org/10.5683/SP3/WCXMAP" target="_blank" rel="noopener noreferrer">Dataset</a>]</li>
-        <li>Zarghami, Y., <b>Muzammil, M.</b>, Adeli, V., Reimer, H., Hadjistavropoulos, T., & Taati, B. (2025). PainControl: Identity-Preserving Pain Expression Transfer with Generative Diffusion Models. <em>BioMedical Engineering OnLine.</em> (UNDER REVIEW)</li>
-        <li>Reimer, H., Zarghami, Y., <b>Muzammil, M.</b>, Sabo, A., Moturu, A., Taati, B., & Hadjistavropoulos, T. (2025, October). Improving Pain Detection Algorithms with AI-Generated Images: Validation of AI-generated Images Depicting Pain Expressions [Poster presentation]. In AGE-WELL Annual Conference, [Montreal, Quebec, Canada].</li>
-      </ul>
-      <hr />
-      <h1>HanaSim</h1>
-      <p>
-        <a
-          href="https://github.com/UofT-Hanabi-Lab/HanaSim"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Repository
-        </a>
-      </p>
-      <p>
-        During the Summer and Fall semesters of 2024, I worked on a research
-        project with two other students on the card game{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://en.wikipedia.org/wiki/Hanabi_(card_game)"
-        >
-          Hanabi
-        </a>
-        . I took this project as course credit for{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://artsci.calendar.utoronto.ca/course/csc494h1"
-        >
-          CSC494/495
-        </a>
-        , and we all worked under the supervision of Professors Alice Gao and
-        Jonathan Calver. During the summer, we initially spent most of our time
-        reviewing existing literature related to developing intelligent agents
-        for the game. After realizing most of the current simulators were
-        out-of-date or not easy to install and use, we decided to create our own
-        simulator called HanaSim. In the Fall, we developed our own intelligent
-        agent, which was based on an incrementally learning decision tree.
-      </p>
-      <p>
-        Here is the poster that we presented at the U of T Summer Research
-        Poster Showcase:
-        <div className="center-container">
-          {" "}
+      <CollapsibleSection title="Publications">
+        <div className={styles.pubCard}>
+          <div className={styles.pubTitle}>
+            SynPAIN: A Synthetic Dataset of Pain and Non-Pain Facial Expressions
+          </div>
+          <div className={styles.pubAuthors}>
+            Taati, B., <b>Muzammil, M.</b>, Zarghami, Y., Moturu, A., Kazerouni, A., Mihailidis, A., Reimer, H., &amp; Hadjistavropoulos, T.
+          </div>
+          <div className={styles.pubVenue}>
+            IEEE Journal of Biomedical and Health Informatics &middot; 2025
+          </div>
+          <div className={styles.pubFooter}>
+            <span className={styles.pubStatus}>Under Review</span>
+            <span className={styles.pubType}>Article</span>
+            <a
+              className={styles.pubLink}
+              href="https://arxiv.org/abs/2507.19673"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              arXiv
+            </a>
+            <a
+              className={styles.pubLink}
+              href="https://doi.org/10.5683/SP3/WCXMAP"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dataset
+            </a>
+          </div>
+        </div>
+
+        <div className={styles.pubCard}>
+          <div className={styles.pubTitle}>
+            PainControl: Identity-Preserving Pain Expression Transfer with Generative Diffusion Models
+          </div>
+          <div className={styles.pubAuthors}>
+            Zarghami, Y., <b>Muzammil, M.</b>, Adeli, V., Reimer, H., Hadjistavropoulos, T., &amp; Taati, B.
+          </div>
+          <div className={styles.pubVenue}>
+            BioMedical Engineering OnLine &middot; 2025
+          </div>
+          <div className={styles.pubFooter}>
+            <span className={styles.pubStatus}>Under Review</span>
+            <span className={styles.pubType}>Article</span>
+          </div>
+        </div>
+
+        <div className={styles.pubCard}>
+          <div className={styles.pubTitle}>
+            Improving Pain Detection Algorithms with AI-Generated Images: Validation of AI-generated Images Depicting Pain Expressions
+          </div>
+          <div className={styles.pubAuthors}>
+            Reimer, H., Zarghami, Y., <b>Muzammil, M.</b>, Sabo, A., Moturu, A., Taati, B., &amp; Hadjistavropoulos, T.
+          </div>
+          <div className={styles.pubVenue}>
+            AGE-WELL Annual Conference &middot; Montreal, Quebec, Canada &middot; October 2025
+          </div>
+          <div className={styles.pubFooter}>
+            <span className={styles.pubType}>Poster Presentation</span>
+          </div>
+        </div>
+      </CollapsibleSection>
+
+      <CollapsibleSection title="HanaSim">
+        <div className={styles.projectLinks}>
+          <a
+            href="https://github.com/UofT-Hanabi-Lab/HanaSim"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repository
+          </a>
+        </div>
+        <p>
+          During the Summer and Fall semesters of 2024, I worked on a research
+          project with two other students on the card game{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://en.wikipedia.org/wiki/Hanabi_(card_game)"
+          >
+            Hanabi
+          </a>
+          . I took this project as course credit for{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://artsci.calendar.utoronto.ca/course/csc494h1"
+          >
+            CSC494/495
+          </a>
+          , and we all worked under the supervision of Professors Alice Gao and
+          Jonathan Calver. During the summer, we initially spent most of our time
+          reviewing existing literature related to developing intelligent agents
+          for the game. After realizing most of the current simulators were
+          out-of-date or not easy to install and use, we decided to create our own
+          simulator called HanaSim. In the Fall, we developed our own intelligent
+          agent, which was based on an incrementally learning decision tree.
+        </p>
+        <p>
+          Here is the poster that we presented at the U of T Summer Research
+          Poster Showcase:
+        </p>
+        <div className={styles.centerContainer}>
           <img
             src="/images/Hanabi Research Poster.png"
             alt="Hanabi research poster"
           />
         </div>
-      </p>
-      <hr />
-      <h1>
-        <a
-          href="https://mmzml.github.io/PakPoll"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          PakPoll
-        </a>
-      </h1>
-      <p>
-        <a
-          href="https://github.com/mmzml/PakPoll"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Repository
-        </a>
-      </p>
-      <p>
-        Inspired by Project538 and{" "}
-        <a
-          href="https://338canada.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          338Canada
-        </a>
-        , I developed a website where users can input polling numbers and
-        generate a simulated map based on those numbers. The website is
-        currently quite simple with limited functionality, but I plan on
-        developing it further, as time permits. Possible future paths could
-        include adding clickable constituencies to view more details and adding
-        a special poll-tracker to show what the current projections are (akin to
-        the main functionalities of websites like 338Canada).
-      </p>
-      <p>
-        Here is a screenshot of the website:
-        <div className="center-container">
-          {" "}
+      </CollapsibleSection>
+
+      <CollapsibleSection title="PakPoll">
+        <div className={styles.projectLinks}>
+          <a
+            href="https://mmzml.github.io/PakPoll"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Website
+          </a>
+          <a
+            href="https://github.com/mmzml/PakPoll"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repository
+          </a>
+        </div>
+        <p>
+          Inspired by Project538 and{" "}
+          <a
+            href="https://338canada.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            338Canada
+          </a>
+          , I developed a website where users can input polling numbers and
+          generate a simulated map based on those numbers. The website is
+          currently quite simple with limited functionality, but I plan on
+          developing it further, as time permits. Possible future paths could
+          include adding clickable constituencies to view more details and adding
+          a special poll-tracker to show what the current projections are (akin to
+          the main functionalities of websites like 338Canada).
+        </p>
+        <p>Here is a screenshot of the website:</p>
+        <div className={styles.centerContainer}>
           <img src="/images/PakPoll.png" alt="PakPoll Screenshot" />
         </div>
-      </p>
-      <hr />
-      <h1>Auto-Translate Chat App</h1>
-      <p>
-        <a
-          href="https://github.com/CSC207-2022F-UofT/course-project-translate-chat-program"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Repository
-        </a>
-      </p>
-      <p>
-        As part of my{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://artsci.calendar.utoronto.ca/course/csc207h1"
-        >
-          CSC207: Software Design
-        </a>{" "}
-        project, I developed (along with a team of 7 people) a chatting app that
-        could translate all received messages to the user's preferred language.
-        This was my very first software project and also the first time I coded
-        in the Java programming language. It taught me how to circumvent the
-        challenges of working on such large-scale projects, but also how to reap
-        its benefits.
-      </p>
-      <p>
-        Here is a{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://docs.google.com/presentation/d/18RFytZTgEIN3Tr_h_kx2dJ0lfDm6BD9UdPULiAetpXc/edit#slide=id.g1ac259d6c06_1_0"
-        >
-          short slide deck
-        </a>{" "}
-        outlining the features of the app, and also how we adhered to{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
-        >
-          Clean Architecture
-        </a>
-        , and{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://en.wikipedia.org/wiki/SOLID"
-        >
-          SOLID
-        </a>{" "}
-        principles.
-      </p>
-      <hr />
-      <h1>Atari Breakout (in assembly)</h1>
-      <p>
-        Note: The repository for this project is private (for academic honesty)
-      </p>
-      <p>
-        I implemented{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://en.wikipedia.org/wiki/Breakout_(video_game)"
-        >
-          Atari Breakout
-        </a>
-        , along with another group member, as a part of the final project in{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://artsci.calendar.utoronto.ca/course/csc258h1"
-        >
-          CSC258: Computer Organization
-        </a>
-        . All of the code is in assembly using the{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://en.wikipedia.org/wiki/MIPS_architecture"
-        >
-          MIPS Architecture
-        </a>
-        . We added two augmentations to the game:
+      </CollapsibleSection>
+
+      <CollapsibleSection title="Auto-Translate Chat App">
+        <div className={styles.projectLinks}>
+          <a
+            href="https://github.com/CSC207-2022F-UofT/course-project-translate-chat-program"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repository
+          </a>
+        </div>
+        <p>
+          As part of my{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://artsci.calendar.utoronto.ca/course/csc207h1"
+          >
+            CSC207: Software Design
+          </a>{" "}
+          project, I developed (along with a team of 7 people) a chatting app that
+          could translate all received messages to the user's preferred language.
+          This was my very first software project and also the first time I coded
+          in the Java programming language. It taught me how to circumvent the
+          challenges of working on such large-scale projects, but also how to reap
+          its benefits.
+        </p>
+        <p>
+          Here is a{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://docs.google.com/presentation/d/18RFytZTgEIN3Tr_h_kx2dJ0lfDm6BD9UdPULiAetpXc/edit#slide=id.g1ac259d6c06_1_0"
+          >
+            short slide deck
+          </a>{" "}
+          outlining the features of the app, and also how we adhered to{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
+          >
+            Clean Architecture
+          </a>
+          , and{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://en.wikipedia.org/wiki/SOLID"
+          >
+            SOLID
+          </a>{" "}
+          principles.
+        </p>
+      </CollapsibleSection>
+
+      <CollapsibleSection title="Atari Breakout (in assembly)">
+        <p>
+          Note: The repository for this project is private (for academic honesty)
+        </p>
+        <p>
+          I implemented{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://en.wikipedia.org/wiki/Breakout_(video_game)"
+          >
+            Atari Breakout
+          </a>
+          , along with another group member, as a part of the final project in{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://artsci.calendar.utoronto.ca/course/csc258h1"
+          >
+            CSC258: Computer Organization
+          </a>
+          . All of the code is in assembly using the{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://en.wikipedia.org/wiki/MIPS_architecture"
+          >
+            MIPS Architecture
+          </a>
+          . We added two augmentations to the game:
+        </p>
         <ul>
           <li>
             After breaking 15 bricks, the ball won't change directions when it
@@ -199,15 +256,14 @@ const ResearchPage = () => {
             controlled by the "j" (left) and "l" (right) keys.
           </li>
         </ul>
-        A video of two games is shown below. <br />
-        <div className="center-container">
-          {" "}
+        <p>A video of two games is shown below.</p>
+        <div className={styles.centerContainer}>
           <video controls>
             <source src="/videos/Breakout demo.mp4" type="video/mp4" />
             Your browser does not support HTML video.
           </video>
         </div>
-      </p>
+      </CollapsibleSection>
     </div>
   );
 };

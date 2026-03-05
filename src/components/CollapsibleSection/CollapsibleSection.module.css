@@ -1,0 +1,91 @@
+/* src/components/CollapsibleSection/CollapsibleSection.module.css */
+.section {
+  margin-bottom: 2.25rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--accent);
+  padding: 0.4rem 0;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  font-family: inherit;
+  transition: color 0.2s ease;
+}
+
+.header:hover {
+  color: var(--accent-hover);
+}
+
+.header:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.chevron {
+  font-size: 0.95rem;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+/* Animated content */
+.contentWrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.contentWrapper.open {
+  grid-template-rows: 1fr;
+}
+
+.contentInner {
+  overflow: hidden;
+}
+
+.content {
+  padding-top: 1.1rem;
+}
+
+/* Compact variant (subsections) */
+.compactSection {
+  margin-bottom: 0;
+}
+
+.compactSection + .compactSection {
+  margin-top: 1.5rem;
+}
+
+.compactHeader {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid var(--border);
+  padding: 0.35rem 0;
+  transition: color 0.2s ease;
+}
+
+.compactHeader:hover {
+  color: var(--text-secondary);
+}
+
+.compactChevron {
+  font-size: 0.65rem;
+  color: var(--text-faint);
+}
+
+.compactContent {
+  padding-top: 0.75rem;
+}

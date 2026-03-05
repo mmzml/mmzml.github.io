@@ -2,15 +2,21 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faFileLines,
+  faHouse,
+  faFlask,
+  faSun,
+  faMoon,
+} from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import styles from "./MainMenu.module.css"; // Import CSS Module
+import styles from "./MainMenu.module.css";
 
-const MainMenu = ({ isOpen, onLinkClick }) => {
-  // Function to handle link clicks - close menu on mobile
+const MainMenu = ({ isOpen, onLinkClick, isDark, onThemeToggle }) => {
   const handleLinkClick = () => {
     if (window.innerWidth <= 992 && onLinkClick) {
-      onLinkClick(); // Call the function passed from Layout to close menu
+      onLinkClick();
     }
   };
 
@@ -26,12 +32,26 @@ const MainMenu = ({ isOpen, onLinkClick }) => {
           </Link>
         </div>
       </li>
+
       <li className={styles.navbarTitle}>
         <Link to="/" onClick={handleLinkClick}>
           Muhammad Muzammil
         </Link>
-        <p>Student at the University of Toronto</p>
+        <p>CS Specialist &middot; University of Toronto</p>
       </li>
+
+      <li className={styles.navLabel}>
+        <span>Navigation</span>
+        <button
+          className={styles.themeToggle}
+          onClick={onThemeToggle}
+          aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+          title={isDark ? "Light mode" : "Dark mode"}
+        >
+          <FontAwesomeIcon icon={isDark ? faSun : faMoon} />
+        </button>
+      </li>
+
       <li className={styles.menuItem}>
         <NavLink
           to="/"
@@ -39,6 +59,7 @@ const MainMenu = ({ isOpen, onLinkClick }) => {
           onClick={handleLinkClick}
           end
         >
+          <FontAwesomeIcon icon={faHouse} className={styles.menuIcon} />
           Home
         </NavLink>
       </li>
@@ -48,19 +69,24 @@ const MainMenu = ({ isOpen, onLinkClick }) => {
           className={({ isActive }) => (isActive ? styles.active : "")}
           onClick={handleLinkClick}
         >
+          <FontAwesomeIcon icon={faFlask} className={styles.menuIcon} />
           Projects & Research
         </NavLink>
       </li>
+
+      <li className={styles.divider} aria-hidden="true" />
+
       <li className={styles.contact}>
-        <p>
+        <div className={styles.contactGrid}>
           <a
             href="mailto:m.muzammil@mail.utoronto.ca"
             aria-label="E-mail"
             title="E-mail"
             onClick={handleLinkClick}
-            className={styles.contactLink}
+            className={styles.contactItem}
           >
             <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
+            <span className={styles.contactLabel}>Email</span>
           </a>
           <a
             href="https://github.com/mmzml"
@@ -69,9 +95,10 @@ const MainMenu = ({ isOpen, onLinkClick }) => {
             aria-label="GitHub"
             title="GitHub"
             onClick={handleLinkClick}
-            className={styles.contactLink}
+            className={styles.contactItem}
           >
             <FontAwesomeIcon icon={faGithub} className={styles.icon} />
+            <span className={styles.contactLabel}>GitHub</span>
           </a>
           <a
             href="https://www.linkedin.com/in/muhammad-muzammil-150440241/"
@@ -80,9 +107,10 @@ const MainMenu = ({ isOpen, onLinkClick }) => {
             aria-label="LinkedIn"
             title="LinkedIn"
             onClick={handleLinkClick}
-            className={styles.contactLink}
+            className={styles.contactItem}
           >
             <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
+            <span className={styles.contactLabel}>LinkedIn</span>
           </a>
           <a
             href="/resume.pdf"
@@ -91,11 +119,12 @@ const MainMenu = ({ isOpen, onLinkClick }) => {
             aria-label="Resume (PDF)"
             title="Resume"
             onClick={handleLinkClick}
-            className={styles.contactLink}
+            className={styles.contactItem}
           >
-            <FontAwesomeIcon icon={faFilePdf} className={styles.icon} />
+            <FontAwesomeIcon icon={faFileLines} className={styles.icon} />
+            <span className={styles.contactLabel}>Resume</span>
           </a>
-        </p>
+        </div>
       </li>
     </ul>
   );
