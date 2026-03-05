@@ -46,9 +46,9 @@ const MainMenu = ({ isOpen, onLinkClick, isDark, onThemeToggle }) => {
           className={styles.themeToggle}
           onClick={onThemeToggle}
           aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-          title={isDark ? "Light mode" : "Dark mode"}
         >
           <FontAwesomeIcon icon={isDark ? faSun : faMoon} />
+          <span>{isDark ? "Light" : "Dark"}</span>
         </button>
       </li>
 
