@@ -41,7 +41,14 @@ const HomePage = () => {
             <h3 className={styles.entryTitle}>May 2025 - Present: Research Assistant for Professor Babak Taati</h3>
             <p className={styles.entryBody}>
               From May 2025 onward I worked with Professor Babak Taati as an undergraduate
-              research assistant (CSC495). My work involved investigating the impact of a synthetic dataset,{" "}
+              research assistant (
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://artsci.calendar.utoronto.ca/course/csc495h1">
+                  CSC495
+              </a>
+              ). My work involved investigating the impact of a synthetic dataset,{" "}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -96,7 +103,14 @@ const HomePage = () => {
           </div>
 
           <div className={styles.entry}>
-            <h3 className={styles.entryTitle}>May 2024 - Dec 2024: Hanabi project (CSC494/495)</h3>
+            <h3 className={styles.entryTitle}>May 2024 - Dec 2024: Hanabi project (
+              <a 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                href="https://artsci.calendar.utoronto.ca/course/csc494h1">
+                  CSC494/495
+              </a>
+            )</h3>
             <p className={styles.entryBody}>
               From May to December 2024, I worked with a team of three under the
               supervision of Professors Alice Gao and Jonathan Calver on a project
@@ -133,7 +147,15 @@ const HomePage = () => {
               >
                 Intelligent Adaptive Interventions Lab
               </a>{" "}
-              as part of the Research Opportunities Program. At the lab, I assisted several graduate
+              as part of the{" "}
+              <a 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                href="https://www.artsci.utoronto.ca/current/experiential-learning/research-opportunities/research-opportunities-program"
+              >
+                Research Opportunities Program
+              </a>
+              . At the lab, I assisted several graduate
               students with their research in human-computer interaction and
               education. My tasks ranged from programming (e.g. React, Python),
               literature reviews, and administrative work.
