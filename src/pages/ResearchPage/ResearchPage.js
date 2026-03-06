@@ -14,7 +14,7 @@ const ResearchPage = () => {
             Taati, B., <b>Muzammil, M.</b>, Zarghami, Y., Moturu, A., Kazerouni, A., Mihailidis, A., Reimer, H., &amp; Hadjistavropoulos, T.
           </div>
           <div className={styles.pubVenue}>
-            IEEE Journal of Biomedical and Health Informatics &middot; 2025
+            IEEE Journal of Biomedical and Health Informatics &middot; 2026
           </div>
           <div className={styles.pubFooter}>
             <span className={styles.pubStatus}>Under Review</span>
@@ -46,7 +46,7 @@ const ResearchPage = () => {
             Zarghami, Y., <b>Muzammil, M.</b>, Adeli, V., Reimer, H., Hadjistavropoulos, T., &amp; Taati, B.
           </div>
           <div className={styles.pubVenue}>
-            BioMedical Engineering OnLine &middot; 2025
+            BioMedical Engineering OnLine &middot; 2026
           </div>
           <div className={styles.pubFooter}>
             <span className={styles.pubStatus}>Under Review</span>
