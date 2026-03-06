@@ -145,12 +145,9 @@ const ResearchPage = () => {
             338Canada
           </a>
           , I developed a website where users can input polling numbers and
-          generate a simulated map based on those numbers. The website is
-          currently quite simple with limited functionality, but I plan on
-          developing it further, as time permits. Possible future paths could
-          include adding clickable constituencies to view more details and adding
-          a special poll-tracker to show what the current projections are (akin to
-          the main functionalities of websites like 338Canada).
+          generate a simulated map based on those numbers. Users can also hover
+          over constituencies to see more detailed results, such as party-by-party
+          voteshares, as well as the previous and projected winning parties.
         </p>
         <p>Here is a screenshot of the website:</p>
         <div className={styles.centerContainer}>
