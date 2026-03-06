@@ -66,6 +66,14 @@ const ResearchPage = () => {
           </div>
           <div className={styles.pubFooter}>
             <span className={styles.pubType}>Poster Presentation</span>
+            <a
+              className={styles.pubLink}
+              href="https://agewell-nce.ca/wp-content/uploads/2025/12/AGE-WELL-Annual-Conference-2025-Abstract-Book.pdf#page=55"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abstract
+            </a>
           </div>
         </div>
       </CollapsibleSection>
