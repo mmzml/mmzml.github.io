@@ -155,61 +155,6 @@ const ResearchPage = () => {
         </div>
       </CollapsibleSection>
 
-      <CollapsibleSection title="Auto-Translate Chat App">
-        <div className={styles.projectLinks}>
-          <a
-            href="https://github.com/CSC207-2022F-UofT/course-project-translate-chat-program"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repository
-          </a>
-        </div>
-        <p>
-          As part of my{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://artsci.calendar.utoronto.ca/course/csc207h1"
-          >
-            CSC207: Software Design
-          </a>{" "}
-          project, I developed (along with a team of 7 people) a chatting app that
-          could translate all received messages to the user's preferred language.
-          This was my very first software project and also the first time I coded
-          in the Java programming language. It taught me how to circumvent the
-          challenges of working on such large-scale projects, but also how to reap
-          its benefits.
-        </p>
-        <p>
-          Here is a{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://docs.google.com/presentation/d/18RFytZTgEIN3Tr_h_kx2dJ0lfDm6BD9UdPULiAetpXc/edit#slide=id.g1ac259d6c06_1_0"
-          >
-            short slide deck
-          </a>{" "}
-          outlining the features of the app, and also how we adhered to{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
-          >
-            Clean Architecture
-          </a>
-          , and{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://en.wikipedia.org/wiki/SOLID"
-          >
-            SOLID
-          </a>{" "}
-          principles.
-        </p>
-      </CollapsibleSection>
-
       <CollapsibleSection title="Atari Breakout (in assembly)">
         <p>
           Note: The repository for this project is private (for academic honesty)
