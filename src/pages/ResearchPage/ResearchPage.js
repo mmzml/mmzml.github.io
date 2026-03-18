@@ -49,8 +49,15 @@ const ResearchPage = () => {
             BioMedical Engineering OnLine &middot; 2026
           </div>
           <div className={styles.pubFooter}>
-            <span className={styles.pubStatus}>Under Review</span>
             <span className={styles.pubType}>Article</span>
+            <a
+              className={styles.pubLink}
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Paper (soon)
+            </a>
           </div>
         </div>
 
