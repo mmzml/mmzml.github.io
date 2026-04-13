@@ -59,7 +59,7 @@ const ResearchPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Paper (soon)
+              Paper
             </a>
           </div>
         </div>
