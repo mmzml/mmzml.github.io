@@ -23,7 +23,11 @@ const MainMenu = ({ isOpen, onLinkClick, isDark, onThemeToggle }) => {
   return (
     <ul className={`${styles.mainMenu} ${isOpen ? styles.open : ""}`}>
       <li className={styles.closeItem}>
-        <button className={styles.closeBtn} onClick={onLinkClick} aria-label="Close menu">
+        <button
+          className={styles.closeBtn}
+          onClick={onLinkClick}
+          aria-label="Close menu"
+        >
           <FontAwesomeIcon icon={faTimes} />
         </button>
       </li>

@@ -20,7 +20,7 @@ const Layout = () => {
   useEffect(() => {
     document.documentElement.setAttribute(
       "data-theme",
-      isDark ? "dark" : "light"
+      isDark ? "dark" : "light",
     );
     localStorage.setItem("theme", isDark ? "dark" : "light");
   }, [isDark]);
@@ -53,7 +53,9 @@ const Layout = () => {
   return (
     <div className={styles.layout}>
       {/* Mobile-only top bar */}
-      <header className={`${styles.mobileHeader} ${isMenuOpen ? styles.mobileHeaderHidden : ""}`}>
+      <header
+        className={`${styles.mobileHeader} ${isMenuOpen ? styles.mobileHeaderHidden : ""}`}
+      >
         <button
           className={styles.mobileToggle}
           onClick={toggleMenu}

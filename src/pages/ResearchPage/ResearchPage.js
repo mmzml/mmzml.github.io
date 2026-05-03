@@ -11,7 +11,8 @@ const ResearchPage = () => {
             SynPAIN: A Synthetic Dataset of Pain and Non-Pain Facial Expressions
           </div>
           <div className={styles.pubAuthors}>
-            Taati, B., <b>Muzammil, M.</b>, Zarghami, Y., Moturu, A., Kazerouni, A., Mihailidis, A., Reimer, H., &amp; Hadjistavropoulos, T.
+            Taati, B., <b>Muzammil, M.</b>, Zarghami, Y., Moturu, A., Kazerouni,
+            A., Mihailidis, A., Reimer, H., &amp; Hadjistavropoulos, T.
           </div>
           <div className={styles.pubVenue}>
             IEEE Journal of Biomedical and Health Informatics &middot; 2026
@@ -32,10 +33,12 @@ const ResearchPage = () => {
 
         <div className={styles.pubCard}>
           <div className={styles.pubTitle}>
-            PainControl: Identity-Preserving Pain Expression Transfer with Generative Diffusion Models
+            PainControl: Identity-Preserving Pain Expression Transfer with
+            Generative Diffusion Models
           </div>
           <div className={styles.pubAuthors}>
-            Zarghami, Y., <b>Muzammil, M.</b>, Adeli, V., Reimer, H., Hadjistavropoulos, T., &amp; Taati, B.
+            Zarghami, Y., <b>Muzammil, M.</b>, Adeli, V., Reimer, H.,
+            Hadjistavropoulos, T., &amp; Taati, B.
           </div>
           <div className={styles.pubVenue}>
             BioMedical Engineering OnLine &middot; 2026
@@ -44,24 +47,27 @@ const ResearchPage = () => {
             <span className={styles.pubType}>Article</span>
             <a
               className={styles.pubLink}
-              href=""
+              href="https://link.springer.com/article/10.1186/s12938-026-01561-2"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Paper (soon)
+              Paper
             </a>
           </div>
         </div>
 
         <div className={styles.pubCard}>
           <div className={styles.pubTitle}>
-            Improving Pain Detection Algorithms with AI-Generated Images: Validation of AI-generated Images Depicting Pain Expressions
+            Improving Pain Detection Algorithms with AI-Generated Images:
+            Validation of AI-generated Images Depicting Pain Expressions
           </div>
           <div className={styles.pubAuthors}>
-            Reimer, H., Zarghami, Y., <b>Muzammil, M.</b>, Sabo, A., Moturu, A., Taati, B., &amp; Hadjistavropoulos, T.
+            Reimer, H., Zarghami, Y., <b>Muzammil, M.</b>, Sabo, A., Moturu, A.,
+            Taati, B., &amp; Hadjistavropoulos, T.
           </div>
           <div className={styles.pubVenue}>
-            AGE-WELL Annual Conference &middot; Montreal, Quebec, Canada &middot; October 2025
+            AGE-WELL Annual Conference &middot; Montreal, Quebec, Canada
+            &middot; October 2025
           </div>
           <div className={styles.pubFooter}>
             <span className={styles.pubType}>Poster Presentation</span>
@@ -106,12 +112,13 @@ const ResearchPage = () => {
             CSC494/495
           </a>
           , and we all worked under the supervision of Professors Alice Gao and
-          Jonathan Calver. During the summer, we initially spent most of our time
-          reviewing existing literature related to developing intelligent agents
-          for the game. After realizing most of the current simulators were
-          out-of-date or not easy to install and use, we decided to create our own
-          simulator called HanaSim. In the Fall, we developed our own intelligent
-          agent, which was based on an incrementally learning decision tree.
+          Jonathan Calver. During the summer, we initially spent most of our
+          time reviewing existing literature related to developing intelligent
+          agents for the game. After realizing most of the current simulators
+          were out-of-date or not easy to install and use, we decided to create
+          our own simulator called HanaSim. In the Fall, we developed our own
+          intelligent agent, which was based on an incrementally learning
+          decision tree.
         </p>
         <p>
           Here is the poster that we presented at the U of T Summer Research
@@ -153,8 +160,9 @@ const ResearchPage = () => {
           </a>
           , I developed a website where users can input polling numbers and
           generate a simulated map based on those numbers. Users can also hover
-          over constituencies to see more detailed results, such as party-by-party
-          voteshares, as well as the previous and projected winning parties.
+          over constituencies to see more detailed results, such as
+          party-by-party voteshares, as well as the previous and projected
+          winning parties.
         </p>
         <p>Here is a screenshot of the website:</p>
         <div className={styles.centerContainer}>
@@ -164,7 +172,8 @@ const ResearchPage = () => {
 
       <CollapsibleSection title="Atari Breakout (in assembly)">
         <p>
-          Note: The repository for this project is private (for academic honesty)
+          Note: The repository for this project is private (for academic
+          honesty)
         </p>
         <p>
           I implemented{" "}
