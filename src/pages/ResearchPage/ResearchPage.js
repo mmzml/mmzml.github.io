@@ -21,19 +21,11 @@ const ResearchPage = () => {
             <span className={styles.pubType}>Article</span>
             <a
               className={styles.pubLink}
-              href="https://arxiv.org/abs/2507.19673"
+              href="https://mmzml.github.io/SynPAIN/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              arXiv
-            </a>
-            <a
-              className={styles.pubLink}
-              href="https://doi.org/10.5683/SP3/WCXMAP"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Dataset
+              Project Page
             </a>
           </div>
         </div>
