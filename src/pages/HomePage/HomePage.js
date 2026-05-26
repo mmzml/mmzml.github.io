@@ -10,11 +10,10 @@ const HomePage = () => {
       <CollapsibleSection title="Introduction">
         <div className={styles.introBlock}>
           <p>
-            I am a final-year student currently enrolled at the University of
-            Toronto pursuing a Specialist in Computer Science and minors in
-            Mathematics and Statistics. My current research interests span many
-            topics in computer vision and machine learning. Feel free to check
-            out the below information about me and also the{" "}
+            I am an incoming MScAC student at the University of Toronto with a 
+            concentration in Artificial Intelligence. My current research 
+            interests span many topics in computer vision and machine learning. 
+            Feel free to check out the below information about me and also the{" "}
             <Link to="/research">Projects & Research</Link> tab for more details
             on my work (including publications)!
           </p>
