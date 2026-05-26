@@ -47,7 +47,7 @@ const ResearchPage = () => {
             <span className={styles.pubType}>Article</span>
             <a
               className={styles.pubLink}
-              href="https://link.springer.com/article/10.1186/s12938-026-01561-2"
+              href="https://doi.org/10.1186/s12938-026-01561-2"
               target="_blank"
               rel="noopener noreferrer"
             >
