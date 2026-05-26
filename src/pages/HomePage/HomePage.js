@@ -183,7 +183,7 @@ const HomePage = () => {
         <CollapsibleSection title="Teaching" compact>
           <div className={styles.entry}>
             <h3 className={styles.entryTitle}>
-              Jan 2026 - Present: Teaching Assistant for{" "}
+              Jan 2026 - Apr 2026: Teaching Assistant for{" "}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -193,10 +193,10 @@ const HomePage = () => {
               </a>
             </h3>
             <p className={styles.entryBody}>
-              Since January 2026, I am once again working as a TA for CSC148. My
-              responsibilities include holding weekly office hours, providing
-              assignment and coursework guidance, and grading & invigilating
-              exams.
+              From January 2026 to April 2026, I once again worked as a TA 
+              for CSC148. My responsibilities included holding weekly office 
+              hours, providing assignment and coursework guidance, and 
+              grading & invigilating exams.
             </p>
           </div>
 
@@ -261,7 +261,7 @@ const HomePage = () => {
         <div className={styles.eduCard}>
           <div className={styles.eduCardHeader}>
             <span className={styles.eduInstitution}>University of Toronto</span>
-            <span className={styles.eduYears}>2021 – present</span>
+            <span className={styles.eduYears}>2021 - 2026</span>
           </div>
           <div className={styles.eduDegree}>Honours Bachelor of Science</div>
           <div className={styles.eduMeta}>

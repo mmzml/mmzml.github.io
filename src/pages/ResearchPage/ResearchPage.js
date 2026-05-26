@@ -15,7 +15,7 @@ const ResearchPage = () => {
             A., Mihailidis, A., Reimer, H., &amp; Hadjistavropoulos, T.
           </div>
           <div className={styles.pubVenue}>
-            IEEE Journal of Biomedical and Health Informatics &middot; 2026
+            TBA &middot; 2026
           </div>
           <div className={styles.pubFooter}>
             <span className={styles.pubStatus}>Under Review</span>
