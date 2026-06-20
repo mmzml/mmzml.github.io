@@ -260,6 +260,21 @@ const HomePage = () => {
         <div className={styles.eduCard}>
           <div className={styles.eduCardHeader}>
             <span className={styles.eduInstitution}>University of Toronto</span>
+            <span className={styles.eduYears}>2026 - Present</span>
+          </div>
+          <div className={styles.eduDegree}>
+            Master of Science in Applied Computing (MScAC)
+          </div>
+          <div className={styles.eduMeta}>
+            GPA: TBD
+          </div>
+          <ul className={styles.eduDetails}>
+            <li>Concentration: Artificial Intelligence in Healthcare</li>
+          </ul>
+        </div>
+        <div className={styles.eduCard}>
+          <div className={styles.eduCardHeader}>
+            <span className={styles.eduInstitution}>University of Toronto</span>
             <span className={styles.eduYears}>2021 - 2026</span>
           </div>
           <div className={styles.eduDegree}>Honours Bachelor of Science</div>
