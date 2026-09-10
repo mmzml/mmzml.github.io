@@ -32,6 +32,12 @@ const HomePage = () => {
               <span className={styles.interestTag}>Probabilistic Modeling</span>
               <span className={styles.interestTag}>Reinforcement Learning</span>
             </div>
+            <div className={styles.interestGroup}>
+              <span className={styles.interestLabel}>Natural Language Processing</span>
+              <span className={styles.interestTag}>Text Generation</span>
+              <span className={styles.interestTag}>Language Modeling</span>
+              <span className={styles.interestTag}>Question Answering</span>
+            </div>
           </div>
         </div>
       </CollapsibleSection>
@@ -40,10 +46,10 @@ const HomePage = () => {
         <CollapsibleSection title="Research" compact>
           <div className={styles.entry}>
             <h3 className={styles.entryTitle}>
-              May 2025 - Present: Research Assistant for Professor Babak Taati
+              May 2025 - August 2026: Research Assistant for Professor Babak Taati
             </h3>
             <p className={styles.entryBody}>
-              From May 2025 onward I worked with Professor Babak Taati as an
+              From May 2025 to August 2026, I worked with Professor Babak Taati as an
               undergraduate research assistant (
               <a
                 target="_blank"
@@ -71,7 +77,7 @@ const HomePage = () => {
               >
                 research paper
               </a>{" "}
-              based on our findings. I am currently continuing this research on
+              based on our findings. After August 2025, I continued this research on
               a volunteer basis.
             </p>
           </div>
@@ -180,6 +186,25 @@ const HomePage = () => {
         </CollapsibleSection>
 
         <CollapsibleSection title="Teaching" compact>
+          <div className={styles.entry}>
+            <h3 className={styles.entryTitle}>
+              Sep 2026 - Present: Teaching Assistant for{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://artsci.calendar.utoronto.ca/course/csc207h1"
+              >
+                CSC207
+              </a>
+            </h3>
+            <p className={styles.entryBody}>
+              From September 2025, I have been a TA for CSC207: Software
+              Design. My responsibilities include holding weekly office hours
+              to assist students, serving as a midterm invigilator, and marking
+              midterms & final exams.
+            </p>
+          </div>
+
           <div className={styles.entry}>
             <h3 className={styles.entryTitle}>
               Jan 2026 - Apr 2026: Teaching Assistant for{" "}
