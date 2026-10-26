@@ -10,8 +10,8 @@ const HomePage = () => {
       <CollapsibleSection title="Introduction">
         <div className={styles.introBlock}>
           <p>
-            I am an incoming MScAC student at the University of Toronto with a 
-            concentration in Artificial Intelligence. My current research 
+            I am an MScAC student at the University of Toronto with a 
+            concentration in Artificial Intelligence in Healthcare. My current research 
             interests span many topics in computer vision and machine learning. 
             Feel free to check out the below information about me and also the{" "}
             <Link to="/research">Projects & Research</Link> tab for more details
