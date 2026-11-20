@@ -47,7 +47,7 @@ const MainMenu = ({ isOpen, onLinkClick, isDark, onThemeToggle }) => {
         <Link to="/" onClick={handleLinkClick}>
           Muhammad Muzammil
         </Link>
-        <p>Incoming MScAC Student &middot; University of Toronto</p>
+        <p>MScAC Student &middot; University of Toronto</p>
       </li>
 
       <li className={styles.navLabel}>
