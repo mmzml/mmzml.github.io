@@ -36,7 +36,7 @@ const MainMenu = ({ isOpen, onLinkClick, isDark, onThemeToggle }) => {
         <div className={styles.logo}>
           <Link to="/" onClick={handleLinkClick}>
             <img
-              src="/images/my-headshot.jpg"
+              src="/images/my-headshot.png"
               alt="Muhammad Muzammil Headshot"
             />
           </Link>
